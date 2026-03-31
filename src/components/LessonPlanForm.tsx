@@ -28,7 +28,7 @@ export default function LessonPlanForm() {
     try {
       // POST to your .NET backend on Railway
       // REPLACE the URL below with your actual Railway domain!
-      const { data } = await axios.post('https://lesson-maker-api-production.up.railway.app/api/LessonPlan/generate', form);
+      const { data } = await axios.post('https://lesson-maker-api-production.up.railway.app/api/lessonplan/generate', form);
       setResult(data);
     } catch (err) {
       console.error('Generation failed:', err);
